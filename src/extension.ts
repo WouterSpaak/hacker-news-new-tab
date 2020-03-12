@@ -1,4 +1,6 @@
-const links = document.querySelectorAll('a');
-links.forEach((link) => {
-  link.target = link.target || '_blank';
-});
+const mainBody = document.querySelector('#hnmain > tbody > tr:nth-child(3)');
+if (mainBody) {
+  mainBody.querySelectorAll('a').forEach(anchor => {
+    anchor.target = anchor.target || '_blank';
+  });
+}

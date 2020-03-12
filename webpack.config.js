@@ -7,7 +7,7 @@ module.exports = {
     extension: path.resolve(__dirname, 'src', 'extension.ts')
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname),
     filename: '[name].js'
   },
   module: {
