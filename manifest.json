@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "HackerNews New Tab",
+  "description": "Chrome extension that adds a target=\"_blank\" to all anchors on HackerNews.",
+  "author": "Wouter Spaak",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://news.ycombinator.com/*"],
+      "js": ["build/extension.js"]
+    }
+  ]
+}

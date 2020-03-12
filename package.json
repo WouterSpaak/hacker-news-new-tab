@@ -1,0 +1,21 @@
+{
+  "name": "hacker-news-new-tab",
+  "version": "1.0.0",
+  "description": "Chrome extension that adds a target=\"_blank\" to all anchors on HackerNews.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -w",
+    "build-release": "webpack --config webpack.config.production.js"
+  },
+  "author": "Wouter Spaak <w.spaak@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/chrome": "0.0.99"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
